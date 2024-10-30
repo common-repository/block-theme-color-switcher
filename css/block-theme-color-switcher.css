@@ -1,0 +1,92 @@
+
+.off-canvas-menu {
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    overflow-y: auto;
+    background: #f9f9f9;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: top 0.3s ease;
+    z-index: 9999;
+    text-align: center;
+}
+
+.off-canvas-menu.open {
+    top: 0;
+}
+
+.off-canvas-menu::-webkit-scrollbar {
+    width: 10px;
+}
+
+.off-canvas-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.off-canvas-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.off-canvas-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.off-canvas-button {
+    border: 1px solid darkgray;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.palette-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.palette-box {
+    text-align: left;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ebe8e8;
+}
+
+.color-circle-text {
+    color: #454545;
+}
+
+#colorPaletteSelector {
+    position: fixed;
+    right: 0%;
+    top: 88%;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.color-circle {
+    border: 1px solid lightgrey;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .off-canvas-menu {
+        width: 80%;
+    }
+
+    .switcher-btn-text {
+        display: none;
+    }
+}
